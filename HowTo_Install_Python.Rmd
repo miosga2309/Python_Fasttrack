@@ -1,0 +1,49 @@
+---
+title: "How to Install Python"
+output: html_document
+author: "J. Miosga"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{css, echo=FALSE}
+.ey {
+  background-color: lightyellow;
+  font-weight: bold;
+}
+```
+
+## Some Background
+
+### Why do I need to read this manual and follow the instructions?
+
+This installing guide for Python is sent out before the course in order to be able to start right away with learning about Python. We will not install Python in a standalone version but we install Anaconda as a cross platform package and environment manager that has integrated IDEs such as Juypter Notebook and JupyterLab which allow for chunkwise coding which is perfect for testing and learning (by the way, you can also start RStudio from Anaconda).
+
+### Why do I need a package manager?
+
+Python on its own is a programming language, which provides some basic tools and patterns such as data types, data collections, loops etc. The real power of Python lays in the packages developed for the users. Packages can have all sorts of purposes. For instance, *pandas* is a great package for managing relational data in tables or *sklearn* for example is a great machine learning library. Almost every time you work with Python, you will start your script with importing the packages you require for your project. Here's an example:
+
+```{r examplecode, eval=FALSE, class.source="ey"}
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression 
+```
+
+### Why do I need an environment manager?
+
+Many people like to use one environment per project to avoid running into version conflicts. Python and packages have versions and dependencies. Most packages require a certain minimum version of Python and other packages. Across different projects you will notice that different versions are needed and that creating different environments makes sense. However, for the scope of this course the base or default environment should be sufficient.
+
+## Installing Tutorial
+
+1. Go to [Anaconda](https://docs.anaconda.com/anaconda/install/windows/) and follow the instructions.
+2. Start Anaconda
+3. Try out starting Jupyter Notebook
+4. Paste the following code in the chunk and press `Shift+Enter`
+
+```{r testcode, eval=FALSE, class.source="ey"}
+import pandas as pd
+import numpy as np
+from sklearn.linear_model import LinearRegression 
+```
